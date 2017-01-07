@@ -36,24 +36,5 @@ namespace ConsoleApplication2
                 }
             }
         }
-        static int Input()
-        {
-            Console.WriteLine("Please insert your value");
-
-            while (true)
-            {
-                int convInput;
-                string value = Console.ReadLine();
-                if (Int32.TryParse(value,out convInput))
-                {
-                    return convInput;
-                }
-                else
-                {
-                    Console.WriteLine("please try again using number!!");
-                }
-
-            }
-        }
     }
 }
